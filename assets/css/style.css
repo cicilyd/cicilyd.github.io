@@ -1,0 +1,321 @@
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+}
+#main{
+    position: relative;
+    text-align: center;
+    transform: translate(0px, -30px);
+}
+
+#cuttingboard{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title {
+    font-family: "Gamja Flower";
+    font-size: 80px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#subtitle{
+    font-family: "Darker Grotesque";
+    font-size: 35px;
+    font-weight: 300;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#top-food-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -60px;
+    margin-bottom: -130px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#leaf{
+    margin-top: 40px;
+    z-index: 10;
+    transform: translate(10px, -10px);
+}
+
+#egg{
+    z-index: 11;
+    margin-left: 15px;
+    transform: translate(10px, -10px);
+}
+
+#bott-food-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -150px;
+    margin-bottom: -110px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#apple{
+    z-index: 10;
+    padding-left: 10px;
+    transform: translate(20px, -10px);
+}
+
+#toast{
+    z-index: 11;
+    margin-top: -40px;
+    transform: translate(20px, -10px);
+}
+
+#egg:hover, #leaf:hover{
+    cursor: help;
+    animation: shake 1.8s linear none 2;
+} 
+
+#apple:hover, #toast:hover {
+    cursor: help;
+    animation: shake 1.8s linear none 2;
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+    
+    20%, 80% {
+        transform: translate3d(1px, 0, 0);
+      }
+    
+    30%, 50%, 70% {
+        transform: translate3d(-2px, 0, 0);
+      }
+    
+    40%, 60% {
+        transform: translate3d(2px, 0, 0);
+    }
+}
+
+#companionMethods{
+    width: 300px;
+    transform: translate(0, 30px);
+}
+
+#scroll{
+    position: relative;
+    text-align: center;
+    margin-bottom: 250px;
+}
+#scroll-text {
+    font-family: "Darker Grotesque";
+    font-size: 30px;
+    color: black;
+    font-weight: 400;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -125%);
+    
+}
+
+#scroll-button {
+    background-color: #ffffff;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#scroll-text:hover, #scroll-button:hover{
+    cursor: pointer;
+}
+
+#scroll:hover{
+    animation: wiggle 1.8s linear none infinite;
+    
+}
+
+@keyframes wiggle {
+    10%, 90% {
+        transform: translate3d(0, -3px, 0);
+      }
+    
+    20%, 80% {
+        transform: translate3d(0, 3px, 0);
+      }
+    
+    30%, 50%, 70% {
+        transform: translate3d(0, -4px, 0);
+      }
+    
+    40%, 60% {
+        transform: translate3d(0, 4px, 0);
+    }
+}
+
+#second-pg{
+    position: relative;
+    text-align: center;
+    max-height: 500px;
+}
+
+#main-text{
+    font-family: "Gamja Flower";
+    font-size: 60px;
+    position: absolute;
+    margin-top: -50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#moods{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    margin-bottom: 200px;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+}
+
+#m1{
+    border-radius: 20%;
+    border: 6px solid #F5D1D1;
+}
+#m2{
+    border-radius: 20%;
+    border: 6px solid #F8E0A4;
+}
+#m3{
+    border-radius: 20%;
+    border: 6px solid #CCDDB0;
+}
+#m4{
+    border-radius: 20%;
+    border: 6px solid #D2D5F3;
+}
+   
+
+#m1:hover, #m2:hover,#m3:hover,#m4:hover{
+    border-radius: 50%;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+/*#m1:active, #m2:active,#m3:active,#m4:active{
+    border-radius: 50%;
+    transition: 0s ease-out;
+    border-width: 10px;
+}*/
+
+/* pop-up results */
+
+.hidden {
+    display: none;
+}
+
+#backdrop-overlay {
+    position: absolute;
+    margin-top: -180px;
+    left: 0;
+    width: 100%;
+    height: 690px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.result {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -110%);
+    width: 700px;
+}
+
+.result img{
+    border-radius: 20%;
+    border: 6px solid #ffffff;
+}
+
+.main-caption{
+    font-family: "Gamja Flower";
+    font-size: 50px;
+    line-height: 80%;
+    padding: 15px;
+}
+
+.sub-caption{
+    font-family: "Darker Grotesque";
+    font-size: 25px;
+    margin-bottom: 0px;
+    line-height: 100%;
+}
+
+#result1, #result2, #result3, #result4{
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 35px;
+    padding-bottom: 45px;
+}
+
+#result1{
+    background-color:#F5D1D1;
+}
+#result2{
+    background-color:#F8E0A4;
+}
+#result3{
+    background-color:#CCDDB0;
+}
+#result4{
+    background-color:#D2D5F3;
+}
+
+.check{
+    display: flex;
+    transform: translate(65%, 20%);
+    flex-direction: column;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.question{
+    font-family: "Darker Grotesque";
+    font-weight: 500;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.answers{
+    font-family: "Darker Grotesque";
+    font-weight: 400;
+    font-size: 25px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    transform: translate(24%);
+}
+
+.yes, .no{
+    width: 90px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.yes:hover, .no:hover{
+    background-color: #d9d9d9;
+    font-weight: 600;
+    cursor: pointer;
+}
